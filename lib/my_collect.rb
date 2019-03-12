@@ -10,3 +10,6 @@ def my_collect(array) # put argument(s) here
   end
 result
 end
+
+
+def my_collect(array)
