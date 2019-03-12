@@ -1,11 +1,12 @@
-def my_collect(array)
- empty_array = []
- 
-  i = 0 
-  while i < array
-    empty_array << yield(array[i])
-    i += 1
-  end 
-  empty_array
-end
+def my_collect(array) # put argument(s) here
+  # code here
+  i = 0
+  result = []
 
+  while i < array.size
+    block_given? # optional
+    result << yield(array[i]) # if block, then yield to block # also need to pass argument(s) to yield, otherwise block is operating on nil
+    i += 1
+  end
+result
+end
