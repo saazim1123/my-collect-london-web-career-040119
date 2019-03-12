@@ -20,4 +20,5 @@ def my_collect(array)
     result << yield(array[i])
     i += 1
   end
+  empty_array
 end
